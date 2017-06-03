@@ -55,6 +55,5 @@ class MarkovAdapter(BestMatch):
         if os.path.exists('training_text.txt'):
             with open("training_text.txt") as f:
                 text = f.read()
-            print('Brain Reloaded')
             f.close()
             return markovify.NewlineText(text)
